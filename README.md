@@ -11,7 +11,7 @@
 * GitLab Group Main Link: https://git.cs.dal.ca/snpatel/csci-5709-grp-02
 * GitLab Group Branch Link: https://git.cs.dal.ca/snpatel/csci-5709-grp-02/-/tree/rutvik-shah
 * GitLab Tutorial 2 Link: https://git.cs.dal.ca/rbshah/csci5709-tutorial2
-* Netlify Website Link: https://helpful-starlight-11e5aa.netlify.app
+* Netlify Website Link: https://rutvik-shah-csci5708.netlify.app/
 
 ## Authors
 
