@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import image1 from "./image1.jpg"
 import image2 from "./image2.jpg"
 import image3 from "./image3.jpg"
 
 const Body = () => {
 
+    const [data,setData] = useState("");
+
+    const [update, setUpdatedData] = useState("1199");
+
+    const getData = (e) => {
+        e.preventDefault();
+        setData(e.target.value);
+    }
+
     const myFunction = (carName) => {
         alert(carName)
+    }
+
+    const updateValue = () => {
+        setUpdatedData(data);
+        setData("")
     }
 
     return(
@@ -24,10 +38,10 @@ const Body = () => {
                                 <div className="main-description">
                                     <h3>Main Car</h3>
                                     <hr/>
-                                    <p className="product-price"><p>Current Bid Amount :- </p>$1199.00</p>
+                                    <p className="product-price"><p>Current Bid Amount :- </p>${update}</p>
                                     <form className="add-inputs" method="post">
 
-                                    <input type="text" id="amount" name="amount"/><button className="btn btn-primary" type="button">Place Bid</button>
+                                    <input type="text" id="amount" name="amount" onChange={(e)=>getData(e)} value={data}/><button className="btn btn-primary" type="button" onClick={updateValue}>Place Bid</button>
                                     </form>
                                     <div style={{"clear":"both"}}></div>
 
