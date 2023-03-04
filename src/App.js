@@ -1,16 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Body from './components/Body';
-import Navbar from './components/Navbar';
+import LoginPage from './components/LoginPage';
+import Profiles from './components/Profiles';
+import ProfileDetails from './components/ProfileDetails';
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <Body />
-    </div>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<LoginPage/>} />
+      <Route path="/profiles" element={<Profiles/>} />
+      <Route path="/profiledetails" element={<ProfileDetails/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
