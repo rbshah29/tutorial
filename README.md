@@ -1,22 +1,14 @@
-# CSCI-5709_Group_2
 
-## Getting started
-# Lab / Assignment / Project Title
+# user-details
 
-* *Date Created*: 01 02 2023
-* *Last Modification Date*: 02 02 2023
+## docker variables
 
-## Links
-
-* GitLab Group Main Link: https://git.cs.dal.ca/snpatel/csci-5709-grp-02
-* GitLab Group Branch Link: https://git.cs.dal.ca/snpatel/csci-5709-grp-02/-/tree/rutvik-shah
-* GitLab Tutorial 2 Link: https://git.cs.dal.ca/rbshah/csci5709-tutorial2
-* Netlify Website Link: https://rutvik-shah-csci5708.netlify.app/
-
-## Authors
-
-* [Rutvik Bhavesh Shah](rt304004@dal.ca)
-
-## Built With
-
-* [react](https://reactjs.org/) - The web framework used
+| Variable | Usage |
+| -------- | ----- |
+| MONGO_URL | -e MONGO_URL=<<_your_mongo_url_>> |
+| LOG_LEVEL | -e LOG_LEVEL=<<_your_log_level_>> |
+| PORT | -e PORT=<<_your_port_>> |
+| DATABASE | -e DATABASE=<<_your_database_>> |
+| JSON_LIMIT | -e JSON_LIMIT=<<_your_json_limit_>> |
+| LOGS | -v <<_your_path_>>:/logs |
+    
